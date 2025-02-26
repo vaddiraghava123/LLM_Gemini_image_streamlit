@@ -17,6 +17,15 @@ prompt = st.text_input("Enter the text ")
 
 if st.button("GET RESPONSE"):
   img = Image.open(uploaded_file)
+  
+  new_width = 200
+  aspect_ratio = img.height / img.width
+  new_height = int(new_width * aspect_ratio)
+  resized_image = img.resize((new_width, new_height))
+
+   # Display the resized image
+  st.image(resized_image, caption="Resized Image", use_column_width=False)
+    
   model = genai.GenerativeModel("gemini-1.5-flash")
   response = model.generate_content([prompt,img])
   st.markdown(response.text)
