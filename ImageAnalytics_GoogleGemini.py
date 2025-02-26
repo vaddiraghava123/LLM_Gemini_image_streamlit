@@ -5,7 +5,7 @@ from PIL import Image
 api_key ="AIzaSyCqXNppjN4pn4ouy_LWHDYdbXXvpv7NBac"
 genai.configure(api_key=api_key)
 st.set_page_config(layout="wide")
-st.title("Image - analytics , Google Gemin Connection with Python")
+st.title("Image - analytics , Google Gemini Connection with Python")
 
 uploaded_file = st.file_uploader("Upload Image", type =["png","jpg","jpeg"])
 if uploaded_file is not None:
