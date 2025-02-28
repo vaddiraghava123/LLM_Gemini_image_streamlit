@@ -2,7 +2,7 @@
 
 ### Run and Deploy into streamlit cloud community
 
-   URL : https://vaddi-image-gemini.streamlit.app/
+   URL : [https://vaddi-image-gemini.streamlit.app/](https://vaddi-gemini-ai.streamlit.app/)
 
    ![image](https://github.com/user-attachments/assets/90da4668-ac20-4881-b497-9d365a64c284)
 
