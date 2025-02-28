@@ -12,6 +12,6 @@ current_page = st.query_params.get("page", ["main"])[0]
 genai_connect = genai_connect.configure_genai()
 
 if st.button("Image Upload"):
-    st.switch_page("pages\Image_process.py")        
+    st.switch_page("pages\\Image_process.py")        
 if st.button("Text Chat"):
-    st.switch_page("pages\Text_process.py")
+    st.switch_page("pages\\Text_process.py")
